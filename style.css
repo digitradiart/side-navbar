@@ -12,9 +12,12 @@ body {
 }
 
 .pages {
-    padding: 20px;
-    margin: 20px;
+    padding: 10%;
+    margin: 5%;
     background-color: lightblue;
+    transition: margin-left .5s;
+    padding: 30px;
+    text-align: justify;
 }
 
 .sideNav {
@@ -24,46 +27,51 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: palevioletred;
+    background-color: teal;
     overflow: hidden; /*disable horizontal scroll*/
     padding-top: 60px;
     transition: 0.5s;
 }
 
 .sideNav a {
-    padding: 8px 8px 8px 32px;
+    padding: 12px 24px;
     text-decoration: none;
     font-size: 1.2em;
-    color: purple;
+    color: white;
     display: block;
     transition: 0.3s;
 }
 
 .sideNav a:hover {
-    background-color: royalblue;
+    background-color: cadetblue;
 }
 
-.sideNav .closebtn {
+#closebtn {
     position: absolute;
     top: 0;
-    right: 25px;
-    font-size: 36px;
+    right: 0;
+    font-size: 30px;
     margin-left: 50px;
-}
-
-.pages {
-    transition: margin-left .5s;
-    padding: 20px;
-}
-
-
-@media screen and (max-height: 450px) {
-    .sideNav {padding-top: 15px;}
-    .sideNav a {font-size: 18px;}
 }
 
 #openbtn {
     position: fixed;
     left: 0;
     top: 0;
+    background-color: teal;
+    padding: 10px;
 }
+
+#openbtn:active {
+    background-color: royalblue;
+}
+
+@media screen and (max-height: 450px) {
+    .sideNav {
+        padding-top: 15px;
+    }
+    .sideNav a {
+        font-size: 18px;
+    }
+}
+
